@@ -1,0 +1,10 @@
+import operacion.operaciones
+
+def main():
+    print(operacion.operaciones.suma(3,5 ))
+    print(operacion.operaciones.division(3,4))
+    print(operacion.operaciones.resta(5,6))
+    print(operacion.operaciones.multiplicacion(8,4))
+
+if __name__ == "__main__":
+    main()
