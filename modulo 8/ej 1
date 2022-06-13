@@ -1,0 +1,10 @@
+f = open('datos.txt', 'w')
+f.write('hola que tal\n')
+f.close()
+
+f = open('datos.txt', 'r+')
+f.readline()
+f.write('estoy escribiendo en python')
+f.seek(0)
+print(f.read())
+f.close()
