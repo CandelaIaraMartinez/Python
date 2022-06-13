@@ -1,0 +1,22 @@
+from asyncio import run_coroutine_threadsafe
+from json import load
+from turtle import color
+
+
+class Vehículo:
+    def __init__(self, color, ruedas):
+        self.color = color
+        self.ruedas = ruedas
+
+    def __str__(self):
+        return f'El color del auto es {self.color} y tiene {self.ruedas} ruedas'
+
+vehiculo = Vehículo("Rojo", 3)
+print(vehiculo)
+
+f = open('vehiculo_objeto', 'w+b')
+
+f.seek(0)
+nuevo_vehiculo = load(f)
+print(nuevo_vehiculo)
+f.close()
