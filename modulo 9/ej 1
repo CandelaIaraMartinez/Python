@@ -1,0 +1,4 @@
+lista_paises: input('Introduzca su lista de países separado por comas: ')
+paises = [pais for pais in lista_paises.split(",")]
+
+print(",".join(sorted(list(set(paises)))))
